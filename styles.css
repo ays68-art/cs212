@@ -1,0 +1,152 @@
+html{
+    background: #8f81df
+}
+.h1{
+  font-size: 50px;
+  text-align: center;
+}
+
+.wrapper{
+  position: relative;
+  display: flex;
+  gap: 20px;
+}
+
+.grid-container{
+    display: grid;
+    place-items: center;
+    align-content: space-between;
+    grid-template-columns: 100px;
+    grid-template-rows: 100px;
+    grid-auto-rows: 100px;
+    column-gap: 500px;
+    row-gap: 10px;
+    background-color: antiquewhite;
+    border-radius: 50px;
+    width: 100px;
+}
+
+.side-text{
+  position: absolute;
+  right: 120px;
+  left: 120px;
+  width: auto;
+  top: 0;
+  font-size: 25px;
+}
+
+.nauimg{
+  display: block;
+    position: center;
+    right: 120px;
+    left: 120px;
+      top: 75px;
+      width: 75px;
+    height: 20px; 
+}
+
+.Homepage-container{
+    font-size: 50px;
+    grid-template-columns: 4;
+    grid-template-rows: 1;
+    align-items: baseline;
+    text-align: center;
+}
+
+.About-Me{
+  font-size: 25px;
+  align-items: center;
+  text-align: center;
+  width: auto;
+}
+
+
+
+.grid-container2{
+    display: grid;
+    place-items: center;
+    align-content: space-around;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr;
+    grid-auto-rows: 75px;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    background-color: #e3d5fd
+}
+
+
+    .Education{
+  font-size: 25px;
+  display: subgrid;
+  grid-column: span 2;
+  justify-items: center;
+  text-align: center;
+  width: 500px;
+  background-color:rgb(182, 153, 221)
+}
+
+.Experience{
+  font-size: 25px;
+  display: subgrid;
+  grid-column: span 3;
+  place-items: center;
+  align-items: center;
+  text-align: center;
+  width: 500px;
+  background-color:rgb(182, 153, 221)
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  align-items: center;
+  text-align: center;
+  width: 500px;
+  font-size: 25px;
+  background-color:rgb(182, 153, 221)
+  
+}
+
+.grid-container3{
+    display: grid;
+    place-items: center;
+    align-content: space-around;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr;
+    grid-auto-rows: 75px;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    background-color: #e3d5fd
+}
+
+.Projects{
+  font-size: 25px;
+  display: subgrid;
+  grid-column: span 5;
+  justify-items: center;
+  text-align: center;
+  width: 500px;
+  background-color:rgb(182, 153, 221)
+}
+.Resume{
+ font-size: 20px;
+ display: block;
+  justify-items: center;
+  text-align: center;
+  width: auto;
+  padding: 10px; 
+  background-color:rgb(182, 153, 221)
+}
+
+.Resume:hover{
+  background-color: #e3d5fd
+  font-size: 24px;
+}
