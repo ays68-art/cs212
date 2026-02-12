@@ -40,9 +40,20 @@ html{
     position: center;
     right: 120px;
     left: 120px;
-      top: 75px;
-      width: 75px;
+    top: 75px;
+    width: 75px;
     height: 20px; 
+    border-radius: 150px;
+}
+#nauimg {
+  border-radius: 0%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+
+#nauimg:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .Homepage-container{
@@ -145,8 +156,46 @@ html{
   padding: 10px; 
   background-color:rgb(182, 153, 221)
 }
-
 .Resume:hover{
-  background-color: #e3d5fd
+  background-color: #e3d5fd;
   font-size: 24px;
+}
+
+.images{
+  display: flex;
+  justify-content: space-around;
+}
+.image-container{
+  height: 1080px;
+  width: 800px;
+  position: relative;
+}
+.image-container img{
+  width: 300%;
+  height: 300%;
+}
+.transition-image{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+.image-container:hover{
+  opacity: 0.5;
+}
+
+.fade::after{
+  content:"";
+  background:black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.fade:hover::after{
+  opacity: 0.5;
 }
