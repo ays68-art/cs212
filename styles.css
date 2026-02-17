@@ -2,8 +2,11 @@ html{
     background: #8f81df
 }
 .h1{
+  display: flex;
   font-size: 50px;
   text-align: center;
+  justify-content: center;
+  position: relative;
 }
 
 .wrapper{
@@ -12,18 +15,18 @@ html{
   gap: 20px;
 }
 
-.grid-container{
-    display: grid;
-    place-items: center;
-    align-content: space-between;
-    grid-template-columns: 100px;
-    grid-template-rows: 100px;
-    grid-auto-rows: 100px;
-    column-gap: 500px;
-    row-gap: 10px;
-    background-color: antiquewhite;
-    border-radius: 50px;
+.flex-container{
+    display: flex;
+    flex-grow: -1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     width: 100px;
+    height: 1000px;
+    background-color:antiquewhite;
+    border-radius: 20px;
+  
+    
 }
 
 .side-text{
@@ -111,13 +114,14 @@ html{
 }
 
 .container{
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  position: absolute;
+  grid-template-columns: minmax(500px, 1fr);
   justify-content: center;
-  place-items: center;
-  align-items: center;
+  align-items: space-between;
   text-align: center;
-  width: 500px;
+  width: auto;
+  height: 715px;
   font-size: 25px;
   background-color:rgb(182, 153, 221)
   
@@ -198,4 +202,53 @@ html{
 
 .fade:hover::after{
   opacity: 0.5;
+}
+@media only screen and (max-width: 600px) {
+  .flex-container{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color:antiquewhite;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .side-text{
+    position: sticky;
+    right: 10px;
+    left: 10px;
+    width: 500px;
+    top: 0;
+    font-size: 10px;
+  }
+   .nauimg{
+    display: block;
+    position: center;
+    right: 5px;
+    left: 5px;
+    top: 60px;
+    width: 40px;
+    height: 10px; 
+    border-radius: 100px;
+   }
+    .Homepage-container{
+      font-size: 25px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      align-items: baseline;
+      text-align: center;
+    }
+    .About-Me{
+      font-size: 10px;
+      align-items: center;
+      text-align: center;
+      width: auto;
+    }
+}
+
+.footer-content{
+  display: flex;
+  position: relative;
+  flex-direction: column;
 }
