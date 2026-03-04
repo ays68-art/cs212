@@ -8,7 +8,14 @@
     <h1 class="h1">Anna Santiago</h1>
     </div>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
+    <script>
+        let name = "Anna Santiago";
+        function showGreeting(){
+            alert("Hello! My name is " + name + " and welcome to my portfolio website!");
+        }
+        showGreeting();
+    </script>
+    </head>
 <body>
      <link rel="stylesheet" href="styles.css">
 
@@ -35,6 +42,7 @@
         </div>   
             </head>
 <body>
+
 
 
 <div></div>
@@ -131,6 +139,9 @@
    </table>
    </div>
 </div>
+
+<script src="app.js"></script>
+
 </body>
 <footer>
     <div class="footer-content">
@@ -141,7 +152,29 @@
             <h3> <b> Resume: </b> </h3>
     <div class="Resume">
    <p> Download my resume here: </p>
-	<a href="https://drive.google.com/file/d/1hr8oNO4bOR-hOW-j_SNDwCOd-wm_tB4G/view?usp=drive_link">	https://drive.google.com/file/d/1hr8oNO4bOR-hOW-j_SNDwCOd-wm_tB4G/view?usp=drive_link </a>
+	<a href="https://drive.usercontent.google.com/download?id=1hr8oNO4bOR-hOW-j_SNDwCOd-wm_tB4G&export=download&authuser=0"><button onclick="javascript:downloadResumeAlert()"> Resume Download </button></a>
+    <script> var downloadResumeAlert = document.getElementsByTagName("button")[0];
+      downloadResumeAlert.addEventListener("click", function (event) {
+        setTimeout(function() {
+          alert("Resume downloaded successfully!");
+        }, 1200);
+        let hasDownloadedResume = true;
+        downloadResumeAlert = hasDownloadedResume;
+   });
+</script>
+    <script>
+     function downloadedResume(){
+        if (!downloadResumeAlert) {
+            alert("Resume downloaded successfully!");
+            downloadResumeAlert = true;
+        }
+        else{
+            downloadResumeAlert = false;
+            alert("You have already downloaded the resume.");
+        }
+     }
+     downloadedResume();
+    </script>
         </div>
         </div>
         <p>&copy; 2025 Anna Santiago. All rights reserved.</p>
